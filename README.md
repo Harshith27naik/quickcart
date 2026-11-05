@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# QuickCart: 10-Minute Grocery Delivery UI
 
-## Getting Started
+QuickCart is a front-end prototype of a quick-commerce grocery app. It is inspired by Zepto, a Y Combinator-backed startup. It shows a simple, fast shopping flow with dummy data and no backend.
 
-First, run the development server:
+## Pages
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- `/` Landing page
+- `/products` Browse and filter products, add items to the cart
+- `/cart` View items, change quantity, remove items, see the total
+- `/login` Mock login form
+
+## Tech Used
+
+- Next.js (App Router)
+- React with JavaScript
+- Plain CSS
+- React Context for the shared cart
+- Dummy product data (no backend)
+
+## Project Structure
+
+```
+app/          pages and layout
+components/   Navbar, Button, ProductCard, EmptyState
+context/      CartContext
+data/         dummy products
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Run
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Then open http://localhost:3000
 
-## Learn More
+## Team
 
-To learn more about Next.js, take a look at the following resources:
+- Student 1: Harshith S
+- Student 2: Maheshwara K S
+- Student 3 : Sathwik R K
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Documents
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- PRODUCT-ASSUMPTIONS.md
+- DESIGN-SYSTEM.md
+- wireframe/
